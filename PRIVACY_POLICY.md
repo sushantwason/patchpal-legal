@@ -1,6 +1,6 @@
 # PatchPal Privacy Policy
 
-**Last Updated:** February 24, 2026
+**Last Updated:** February 24, 2026 (v1.1.0)
 
 ## 1. Introduction
 
@@ -17,7 +17,7 @@ When you use PatchPal, you may provide the following information:
 - **Child's name**: To personalize the app experience
 - **Caretaker's name**: To identify who is using the app
 - **Relationship to child**: To customize the app interface (e.g., Mother, Father, Nanny, Sibling, etc.)
-- **Eye information**: Which eye is patched and which eye is being tracked
+- **Eye information**: Which eye is patched, which eye is being tracked, or whether an alternating schedule is used (with per-session eye recorded)
 - **Gender**: Optional demographic information
 - **Daily patching goal**: Your prescribed patching duration in minutes
 - **Patching session data**:
