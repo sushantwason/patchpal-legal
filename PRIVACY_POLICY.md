@@ -1,6 +1,6 @@
 # PatchPal Privacy Policy
 
-**Last Updated:** February 24, 2026 (v1.1.0)
+**Last Updated:** March 10, 2026 (v1.2.4)
 
 ## 1. Introduction
 
@@ -73,7 +73,7 @@ We implement industry-standard security measures to protect your information:
 - **Encryption in transit**: All data transmitted to iCloud is encrypted using HTTPS
 - **Encryption at rest**: iOS automatically encrypts data stored on your device
 - **Apple's security**: iCloud data is protected by Apple's security infrastructure
-- **No third-party servers**: We do not send your data to any third-party servers
+- **Minimal third-party data**: Only anonymous usage signals are sent to TelemetryDeck; no personal data leaves your device
 
 ### 4.3 Family Sharing
 
@@ -92,9 +92,26 @@ PatchPal uses the following Apple services:
 - **iCloud/CloudKit**: Used for data synchronization across your family's devices. Data is stored in Apple's CloudKit and is subject to [Apple's Privacy Policy](https://www.apple.com/privacy/).
 - **StoreKit**: Used for processing in-app purchases. Payment information is handled entirely by Apple and is subject to [Apple's Privacy Policy](https://www.apple.com/privacy/).
 
-### 5.2 Analytics and Tracking
+### 5.2 Analytics
 
-PatchPal does **not** use any third-party analytics, crash reporting, advertising, or tracking services. We do not collect any anonymized usage data. All data stays on your device and in your personal iCloud account.
+PatchPal uses **TelemetryDeck** for privacy-friendly, anonymous usage analytics. TelemetryDeck is designed to be fully compliant with GDPR, COPPA, and other privacy regulations. Here is what you should know:
+
+- **No personal data is collected**: TelemetryDeck does not collect names, email addresses, device IDs, IP addresses, or any other personally identifiable information
+- **Anonymous signals only**: We track anonymous, aggregate usage patterns (e.g., which features are used, session counts) to improve the app
+- **No advertising or tracking**: Data is never used for advertising, profiling, or cross-app tracking
+- **No cookies**: TelemetryDeck does not use cookies or advertising identifiers
+- **Data processing**: TelemetryDeck processes data in the European Union. For more details, see [TelemetryDeck's Privacy Policy](https://telemetrydeck.com/privacy/)
+
+### 5.3 Crash Reporting
+
+PatchPal includes an optional, **user-initiated** crash reporting feature. If the app encounters an unexpected error, a crash report may be saved locally on your device. This report includes:
+
+- Error details and stack trace (technical debugging information)
+- App version and build number
+- iOS version and device model
+- Date and time of the crash
+
+Crash reports are **never sent automatically**. You may choose to submit a crash report via Settings to help us improve the app. No personal data is included in crash reports.
 
 ## 6. Notifications
 
@@ -113,7 +130,7 @@ PatchPal is designed for use by families tracking children's eye patching time. 
 
 - **Minimal data collection**: We only collect data necessary for app functionality
 - **No behavioral advertising**: We do not use data for advertising purposes
-- **No analytics or tracking**: We do not use any third-party analytics or tracking services
+- **Privacy-safe analytics only**: We use TelemetryDeck, which collects only anonymous, aggregate usage data with no personal identifiers
 - **Parental control**: Parents can delete all local data at any time using the "Reset Account" feature in Settings
 - **No data sharing**: We do not share children's data with third parties
 - **Data retention**: Data is retained only as long as you use the app
