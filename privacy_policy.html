@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1>Privacy Policy for PatchPal</h1>
-    <p><strong>Last Updated:</strong> March 10, 2026 (v1.2.4)</p>
+    <p><strong>Last Updated:</strong> March 30, 2026 (v1.2.12)</p>
 
     <h2>1. Introduction</h2>
     <p>PatchPal ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect information when you use the PatchPal mobile application ("App").</p>
@@ -56,7 +56,7 @@
     </ul>
 
     <h3>2.3 Information Stored Locally</h3>
-    <p>All data is stored locally on your device by default using iOS UserDefaults. If you enable iCloud Sync, data is also stored in your personal iCloud account using Apple's CloudKit service.</p>
+    <p>All data is stored locally on your device by default using local file storage and iOS system storage. If you enable iCloud Sync, data is also stored in your personal iCloud account using Apple's CloudKit service.</p>
     <p>Minimal data (today's patching progress, goal, and child's name) is shared with the home screen widget and Live Activity via App Groups.</p>
 
     <h2>3. How We Use Information</h2>
@@ -75,10 +75,11 @@
 
     <h3>4.1 Where Data is Stored</h3>
     <ul>
-        <li><strong>Local Storage:</strong> Data is stored on your device using iOS UserDefaults</li>
+        <li><strong>Local Storage:</strong> Data is stored on your device in the app's sandboxed file storage and, for legacy compatibility, in iOS system storage. This includes your profile, sessions, and timer state</li>
         <li><strong>iCloud Storage:</strong> If you enable iCloud Sync, data is stored using Apple's CloudKit public database, keyed to your unique profile code</li>
         <li><strong>App Groups:</strong> Minimal data is shared between the main app and the home screen widget via a shared App Group container</li>
         <li><strong>Temporary Files:</strong> Export files (CSV, PDF, text reports) are temporarily created for sharing and cleaned up by the system</li>
+        <li><strong>Diagnostic Storage:</strong> In rare cases where session data becomes unreadable, the original data is preserved in a quarantine folder within the app's local storage to allow potential recovery. This data is permanently deleted when you use "Reset Account"</li>
     </ul>
 
     <h3>4.2 Security Measures</h3>
@@ -91,7 +92,7 @@
     </ul>
 
     <h3>4.3 Family Sharing</h3>
-    <p>PatchPal allows multiple family members to collaborate on tracking a child's patching. Family members join by entering a 6-character profile code. All family members with the code have equal access to the child's patching data, sessions, and encouragement messages. Please share your profile code only with trusted family members or caretakers.</p>
+    <p>PatchPal allows multiple family members to collaborate on tracking a child's patching. Family members join by entering the child's profile code (in PATCH-XXXXXX format). All family members with the code have equal read and write access to the child's patching data, sessions, and encouragement messages. Please share your profile code only with trusted family members or caretakers.</p>
 
     <h3>4.4 Data Sharing</h3>
     <p>We do NOT sell, rent, or share your personal information with third parties for marketing purposes. Your data remains private and is only used as described in this policy.</p>
@@ -161,7 +162,8 @@
     <h2>9. Data Retention</h2>
     <ul>
         <li><strong>Active use:</strong> Data is retained as long as you use the app</li>
-        <li><strong>Account reset:</strong> If you use "Reset Account," all local data is immediately deleted. iCloud data remains in CloudKit and must be managed separately via your iCloud settings.</li>
+        <li><strong>Session history:</strong> Patching sessions older than one year are automatically removed from your device and iCloud to keep storage usage manageable. Recent sessions are always preserved</li>
+        <li><strong>Account reset:</strong> If you use "Reset Account," all local data is immediately deleted, including any diagnostic quarantine files. iCloud data remains in CloudKit and must be managed separately via your iCloud settings</li>
         <li><strong>App deletion:</strong> If you delete the app, all local data is removed from your device</li>
         <li><strong>iCloud data:</strong> iCloud data can be managed from your device's iCloud storage settings</li>
     </ul>
